@@ -7,7 +7,7 @@ deTS relies on R (>= 3.4), pheatmap (>= 1.0.10), RColorBrewer (>= 1.1)
 The pheatmap relies on CRAN. Please follow their installation instruction.  
 `> install.packages("pheatmap")  `
 ### To download the codes, please do:
-`git clone https://github.com/bsml320/deTS.git`  
+`git clone https://github.com/GuangshengPei/deCS.git`  
 `cd deTS`  
 Then open the R:   
 `R`  
