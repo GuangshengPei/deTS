@@ -1,23 +1,23 @@
-# 1. deCS introduction (v1.0)
+# 1. deTS introduction (v1.0)
 Genome-wide association studies (GWAS) and next-generation sequencing technologies have identified hundreds of thousands of disease-associated variants and genes. Interpretation of these variants could be greatly enhanced in tissue-specific systems. However, there are many diseases or traits where the causal tissues or cell types remain unknown. deTS: Tissue-Specific Enrichment Analysis is an R package to identify the most relevant tissues for candidate genes or for gene expression profiles. deTS builds on two pre-processed reference panels. We implemented different statistic tests for different forms of query data. 
 # 2. Usage
-## 2.1 Installing deCS
+## 2.1 Installing deTS
 ### Requirements
-deCS relies on R (>= 3.5), reshape2 (>= 1.4.4), ggplot2 (>= 3.3.2)  
-Please follow their installation instruction.  
-`> install.packages("reshape2")  `
-`> install.packages("ggplot2")  `
+deTS relies on R (>= 3.4), pheatmap (>= 1.0.10), RColorBrewer (>= 1.1)  
+The pheatmap relies on CRAN. Please follow their installation instruction.  
+`> install.packages("pheatmap")  `
 ### To download the codes, please do:
-`git clone https://github.com/GuangshengPei/deCS.git`  
+`git clone https://github.com/bsml320/deTS.git`  
 `cd deTS`  
-Then open the R software and install deCS package.   
-
-### deCS loading
-Load the decS package and dependent library  
+Then open the R:   
+`R`  
+`> install.packages("deTS_1.0.tar.gz")  `
+### deTS loading
+Load the deTS package and dependent library  
 `> library(deTS)`  
- 
+`> library(pheatmap)`  
 ## 2.2 Built-in data loading
-deCS requires different cell type reference panels to conduct the enrichment test: one from GTEx and the other from ENCODE. For GTEx, a matrix including the summary statistics for each tissue is also needed. All datasets have been included in the package. After installation of the package, one can load the data using the following commands:  
+deTS requires two reference panels to conduct the enrichment test: one from GTEx and the other from ENCODE. For GTEx, a matrix including the summary statistics for each tissue is also needed. All datasets have been included in the package. After installation of the package, one can load the data using the following commands:  
 
 Load the t-statistic matrix for the GTEx panel:  
 `> data(GTEx_t_score)`  
